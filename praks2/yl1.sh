@@ -3,4 +3,4 @@
 # kasutaja tervitus
 #autor - Ragnar Joosep
 #
-echo "Tere, Kasutaja!"
+echo "Tere,$(whoami)!"
