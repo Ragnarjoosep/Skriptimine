@@ -1,0 +1,31 @@
+Git kasutamise memo
+----------------------------------------
+
+1. Paigaldamine
+
+Linux : apt-get install git
+
+2. Seadistamine (Töötav kasutaja alt)
+
+git config --global user.name "Ees Perenimi"
+git config --global user.email kasutaja@example.com
+
+git config --global core.editor nano
+
+3. Initsialiseerimine ( ainult üks kord alguses töökaustas)
+
+git init
+
+4. Kasutamine
+lisamine jälgimisele ja muudatuse fikseerimine
+git status
+git add  faili_nimi
+git commit -m "muudatuse kirjeldus "
+Muudatuse uurimine
+git log
+git show commit_hash
+
+5. remote kasutaminen
+a)git remote add origin https://github.com/Ragnarjoosep/skripti_alused.git
+
+B)git push -u origin master
