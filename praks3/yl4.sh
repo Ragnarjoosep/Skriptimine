@@ -8,5 +8,13 @@ read number
 echo -n "Mitu kohta on bussis?:"
 read arv
 
-var1=$(($number-$arv))
-echo $var1
+bussid=$(($number / $arv))
+ylejaanud=$(($number % $arv))
+#
+if test $ylejaanud -gt 0
+then
+	bussid=$(($bussid + 1))
+fi
+#
+echo "Kokku on vaja $bussid taisbussi"
+echo "Kokku on vaja $bussid bussi"
